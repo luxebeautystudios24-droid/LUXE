@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>LUXE Beauty Studio | Premium Salon &amp; Bridal Excellence in Bengaluru</title>
+  <meta name="description"
+    content="Luxe Beauty Studio at MRC Towers, Bannerghatta Rd, Bengaluru. Premier salon offering Airbrush makeup, Hydra Facials, Hairstyling, Nail Art &amp; Rental Jewellery. Call 099006 57096.">
+  <meta name="theme-color" content="#1E1C1B">
+  <meta property="og:title" content="LUXE Beauty Studio | Bengaluru's Premier Beauty Destination">
+  <meta property="og:description"
+    content="Airbrush makeup, Hydra Facials, Hairstyling, Nail Art &amp; Rental Jewellery at MRC Towers, Bannerghatta Road.">
+  <meta property="og:type" content="website">
+
+  <!-- Local Stylesheet System -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- ==================== FULL-SCREEN CINEMATIC INTRO VIDEO ==================== -->
+  <div class="intro-overlay" id="introOverlay">
+    <video class="intro-video" id="introVideo" autoplay muted playsinline preload="auto">
+      <source src="assets/videos/THIS_ONE_gwr_video_mvp.mp4" type="video/mp4">
+    </video>
+    <div class="intro-vignette"></div>
+
+    <!-- Video Progress Line -->
+    <div class="intro-progress-track">
+      <div class="intro-progress-bar" id="introProgressBar"></div>
+    </div>
+
+    <!-- Skip Intro Button -->
+    <button class="skip-intro-btn" id="skipIntroBtn" aria-label="Skip Introduction Video">
+      <span>SKIP INTRO &rarr;</span>
+    </button>
+  </div>
+
+  <!-- ==================== MAIN WEBSITE CONTAINER ==================== -->
+  <div class="app-main-wrapper" id="appMain">
+
+    <!-- ==================== NAVIGATION NAVBAR ==================== -->
+    <nav class="navbar" id="mainNavbar">
+      <div class="container nav-container">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-logo">
+          LUXE <span class="accent">BEAUTY</span> <span class="sub">Studio</span>
+        </a>
+
+        <!-- Desktop Menu Links -->
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About Sanctuary</a></li>
+          <li><a href="#services" class="nav-link">Services Menu</a></li>
+          <li><a href="#studio-tour" class="nav-link">Studio Tour</a></li>
+          <li><a href="#bridal" class="nav-link">Bridal &amp; Jewellery</a></li>
+          <li><a href="#contact" class="nav-link">Contact &amp; Directions</a></li>
+        </ul>
+
+        <!-- Navbar Action Buttons -->
+        <div class="nav-actions">
+          <a href="https://www.instagram.com/luxebeautystudio24/" target="_blank" rel="noopener" class="nav-insta-icon" title="Follow us on Instagram @luxebeautystudio24" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://wa.me/919900657096" target="_blank" rel="noopener" class="nav-phone-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>099006 57096</span>
+          </a>
+          <button class="btn btn-gold btn-sm" data-open-modal>
+            Book Now
+          </button>
+
+          <!-- Mobile Menu Toggle Button -->
+          <div class="mobile-toggle" id="mobileToggle" role="button" aria-label="Toggle menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer-overlay" id="mobileOverlay"></div>
+    <aside class="mobile-drawer" id="mobileDrawer">
+      <div>
+        <a href="#" class="brand-logo" style="margin-bottom: 2.5rem; display: block;">
+          LUXE <span class="accent">BEAUTY</span> <span class="sub">Studio</span>
+        </a>
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link">About Sanctuary</a></li>
+          <li><a href="#services" class="mobile-nav-link">Luxe Services Menu</a></li>
+          <li><a href="#studio-tour" class="mobile-nav-link">Virtual Studio Tour</a></li>
+          <li><a href="#bridal" class="mobile-nav-link">Bridal &amp; Rental Jewellery</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Location &amp; Directions</a></li>
+          <li style="padding-top: 0.5rem;">
+            <a href="https://www.instagram.com/luxebeautystudio24/" target="_blank" rel="noopener" class="mobile-insta-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>@luxebeautystudio24</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div style="margin-top: 2rem;">
+        <button class="btn btn-gold" style="width: 100%;" data-open-modal>
+          Book Appointment
+        </button>
+      </div>
+    </aside>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="heroSection">
+      <!-- Background Video & Overlay -->
+      <div class="hero-video-wrapper">
+        <video class="hero-video-bg" autoplay loop muted playsinline poster="assets/images/studio-reception.jpg">
+          <source src="assets/videos/THIS_ONE_gwr_video_mvp.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay-vignette"></div>
+      </div>
+
+      <!-- Hero Content Container -->
+      <div class="container hero-content-wrapper">
+        <div class="hero-grid">
+          <!-- Hero Text Column -->
+          <div>
+            <div class="hero-tag">
+              <span class="hero-tag-line"></span>
+              <span class="hero-tag-text">BANNERGHATTA ROAD &bull; MRC TOWERS</span>
+            </div>
+            <h1 class="hero-title">
+              Where Beauty <br>Meets <span style="font-style: italic; font-weight: 400; color: var(--color-gold-dark);">Elegance</span>
+            </h1>
+            <p class="hero-description">
+              Premium Beauty, Bridal &amp; Grooming Services<br>Crafted Especially for You.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-gold" data-open-modal>
+                BOOK AN APPOINTMENT
+              </button>
+              <a href="#services" class="btn btn-outline">
+                EXPLORE SERVICES
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <div class="stat-number">4.8★</div>
+                <div class="stat-label">26 Google Reviews</div>
+              </div>
+              <div>
+                <div class="stat-number">7+</div>
+                <div class="stat-label">Expert Services</div>
+              </div>
+              <div>
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Hygiene Assured</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Media Display (Real Studio Reception Photo) -->
+          <div class="hero-media-wrapper">
+            <div class="hero-image-container">
+              <img src="assets/images/studio-reception.jpg" alt="Luxe Beauty Studio Reception Lounge Bannerghatta Rd">
+            </div>
+            <div class="hero-badge-floating">
+              <div class="badge-icon">📍</div>
+              <div>
+                <div class="badge-title">MRC Towers Location</div>
+                <div class="badge-subtitle">Opp. Prestige Park Square</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION: OUR STUDIO SANCTUARY ==================== -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column: Real Studio Reception Photo -->
+          <div class="about-image-frame">
+            <div class="about-img-main">
+              <img src="assets/images/studio-reception.jpg" alt="Our Studio Sanctuary at MRC Towers Bannerghatta Road" loading="lazy">
+            </div>
+            <div class="about-quote-box">
+              <p class="about-quote-text">
+                "Luxury isn't a price point—it's an absolute standard of clinical precision, hygiene, and artistic perfection."
+              </p>
+              <span class="about-quote-author">Luxe Beauty Studio Philosophy</span>
+            </div>
+          </div>
+
+          <!-- Right Column: About Content -->
+          <div>
+            <span class="section-tag">Our Studio Sanctuary</span>
+            <h2 class="section-title">
+              Beauty Redefined <br>At MRC Towers.
+            </h2>
+            <p style="color: var(--color-gray); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              Welcome to <strong>Luxe Beauty Studio</strong>, situated at <strong>MRC Towers, Bannerghatta Road (opp. Prestige Park Square)</strong>. Our multi-suite sanctuary brings together master nail artists, certified dermal estheticians, and bridal stylists under one roof.
+            </p>
+            <p style="color: var(--color-gray); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+              Whether you need a glowing <strong>Hydra Facial</strong>, bespoke <strong>Airbrush Bridal Makeup</strong>, signature <strong>Hairstyling</strong>, or exquisite <strong>Rental Jewellery</strong> for your wedding day, we deliver an unmatchable luxury experience.
+            </p>
+
+            <ul class="about-feature-list">
+              <li class="feature-item">
+                <span class="feature-icon-dot"></span>
+                <span>Airbrush Makeup &amp; Beauty Makeovers</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-dot"></span>
+                <span>Hydra Facial &amp; Skin Radiance Suites</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-dot"></span>
+                <span>Certified Senior Nail Artists</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-dot"></span>
+                <span>Exclusive Bridal Rental Jewellery</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OFFICIAL SERVICES SECTION (EXACTLY 7 SERVICES) ==================== -->
+    <section id="services" class="services-section section-padding">
+      <div class="container">
+        <div class="services-header">
+          <div>
+            <span class="section-tag">Bespoke Treatments &amp; Services</span>
+            <h2 class="section-title" style="margin-bottom: 0;">The Luxe Menu</h2>
+          </div>
+          <p style="color: var(--color-gray); max-width: 420px; font-size: 0.95rem;">
+            Specialized beauty services crafted by expert stylists and dermatological specialists.
+          </p>
+        </div>
+
+        <!-- Service Filter Tabs -->
+        <div class="service-tabs">
+          <button class="tab-btn active" data-filter="all">All Services</button>
+          <button class="tab-btn" data-filter="hair">Hair</button>
+          <button class="tab-btn" data-filter="makeup">Makeup</button>
+          <button class="tab-btn" data-filter="nail-art">Nail Art</button>
+          <button class="tab-btn" data-filter="nail-classes">Nail Art Classes</button>
+          <button class="tab-btn" data-filter="waxing">Waxing</button>
+          <button class="tab-btn" data-filter="facials">Facials</button>
+          <button class="tab-btn" data-filter="manicure-pedicure">Pedicure / Manicure</button>
+        </div>
+
+        <!-- Services Cards Grid (Exactly 7 Services, No Pricing) -->
+        <div class="services-grid">
+
+          <!-- Service 1: Hair -->
+          <article class="service-card" data-category="hair">
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000" alt="Hairstyling & Balayage at Luxe Studio" loading="lazy">
+              <span class="service-badge">STYLING COUTURE</span>
+            </div>
+            <div class="service-card-body">
+              <span class="service-category">Hair Artistry</span>
+              <h3 class="service-title">Hairstyling &amp; Balayage</h3>
+              <p class="service-desc">
+                Modern Hollywood waves, braided up-dos, floral arch hair settings, keratin treatments, and custom balayage hair color.
+              </p>
+              <div class="service-meta">
+                <button class="service-book-btn" data-open-modal="Hair">
+                  ENQUIRE NOW &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2: Makeup -->
+          <article class="service-card" data-category="makeup">
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1000" alt="Airbrush Makeup at Luxe Studio" loading="lazy">
+              <span class="service-badge">FLAWLESS FINISH</span>
+            </div>
+            <div class="service-card-body">
+              <span class="service-category">Cosmetic Artistry</span>
+              <h3 class="service-title">Airbrush Make-up &amp; Makeovers</h3>
+              <p class="service-desc">
+                Lightweight, sweatproof 24-hour HD airbrush foundation for flawless skin texture during weddings, shoots &amp; special events.
+              </p>
+              <div class="service-meta">
+                <button class="service-book-btn" data-open-modal="Makeup">
+                  ENQUIRE NOW &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3: Nail Art -->
+          <article class="service-card" data-category="nail-art">
+            <div class="service-card-img">
+              <img src="assets/images/pedicure-spa.jpg" alt="Nail Art & Extensions" loading="lazy">
+              <span class="service-badge">NAIL ARTISTRY</span>
+            </div>
+            <div class="service-card-body">
+              <span class="service-category">Nail Suite</span>
+              <h3 class="service-title">Nail Extensions &amp; 3D Nail Art</h3>
+              <p class="service-desc">
+                Custom gel and acrylic extensions, chrome finishes, encapsulation, French tips, and intricate 3D hand-painted nail artwork.
+              </p>
+              <div class="service-meta">
+                <button class="service-book-btn" data-open-modal="Nail Art">
+                  ENQUIRE NOW &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 4: Nail Art Classes -->
+          <article class="service-card" data-category="nail-classes">
+            <div class="service-card-img">
+              <img src="assets/images/studio-entrance.jpg" alt="Nail Art Classes Academy" loading="lazy">
+              <span class="service-badge">CERTIFIED ACADEMY</span>
+            </div>
+            <div class="service-card-body">
+              <span class="service-category">Academy Courses</span>
+              <h3 class="service-title">Certified Nail Art Classes</h3>
+              <p class="service-desc">
+                Professional hands-on training modules covering gel extensions, acrylic shaping, 3D nail art techniques &amp; salon business setup.
+              </p>
+              <div class="service-meta">
+                <button class="service-book-btn" data-open-modal="Nail Art Classes">
+                  ENQUIRE NOW &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 5: Waxing -->
+          <article class="service-card" data-category="waxing">
+            <div class="service-card-img">
+              <img src="assets/images/clinical-room.jpg" alt="Luxe Smooth Body Waxing" loading="lazy">
+              <span class="service-badge">SKIN CARE</span>
+            </div>
+            <div class="service-card-body">
+              <span class="service-category">Smooth Skin Rituals</span>
+              <h3 class="service-title">Luxe Smooth Body Waxing</h3>
+              <p class="service-desc">
+                Hygienic, gentle strip and lipo-soluble hot wax treatments for smooth, silky skin with minimal discomfort and post-soothing care.
+              </p>
+              <div class="service-meta">
+                <button class="service-book-btn" data-open-modal="Waxing">
+                  ENQUIRE NOW &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 6: Facials -->
+          <article class="service-card" data-category="facials">
+            <div class="service-card-img">
+              <img src="assets/images/facial-suite.jpg" alt="Hydra Facial & Skin Radiance Suite" loading="lazy">
+              <span class="service-badge">DERM CLINICAL</span>
+            </div>
+            <div class="service-card-body">
+              <span class="service-category">Skin Radiance</span>
+              <h3 class="service-title">Hydra Facial &amp; Skin Radiance</h3>
+              <p class="service-desc">
+                Vortex pore extraction, antioxidant infusion, LED collagen stimulation, and customized dermatological radiance peels.
+              </p>
+              <div class="service-meta">
+                <button class="service-book-btn" data-open-modal="Facials">
+                  ENQUIRE NOW &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 7: Pedicure / Manicure -->
+          <article class="service-card" data-category="manicure-pedicure">
+            <div class="service-card-img">
+              <img src="assets/images/pedicure-spa.jpg" alt="Pedicure & Manicure Recliner Spa" loading="lazy">
+              <span class="service-badge">SPA LUXURY</span>
+            </div>
+            <div class="service-card-body">
+              <span class="service-category">Relaxation Spa</span>
+              <h3 class="service-title">Pedicure &amp; Manicure Spa</h3>
+              <p class="service-desc">
+                Restorative foot spa in leather jet-whirlpool recliners, dead-skin exfoliation, massage therapies, and flawless polish setting.
+              </p>
+              <div class="service-meta">
+                <button class="service-book-btn" data-open-modal="Pedicure / Manicure">
+                  ENQUIRE NOW &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== REVAMPED BRIDAL & RENTAL JEWELLERY SECTION ==================== -->
+    <section id="bridal" class="bridal-section section-padding">
+      <div class="container">
+        <div class="bridal-hero-banner">
+          <span class="section-tag" style="color: var(--color-champagne);">Bridal Makeovers &amp; Rental Jewellery</span>
+          <h2 class="bridal-banner-title">Crafted for Your Most Radiant Day</h2>
+          <p class="bridal-banner-subtitle">
+            From Airbrush bridal transformations to matching royal Rental Jewellery sets, our master artists create the perfect wedding look.
+          </p>
+          <button class="btn btn-gold" data-open-modal="Bridal & Rental Jewellery">
+            Book Bridal Consultation
+          </button>
+        </div>
+
+        <!-- Bridal Packages Grid (No Pricing) -->
+        <div class="bridal-packages-grid">
+
+          <!-- Package 1 -->
+          <div class="bridal-card">
+            <h3 class="bridal-card-title">The Royal South Indian Bride</h3>
+            <p class="bridal-card-subtitle">Traditional Makeup &amp; Hair Arch Styling</p>
+
+            <ul class="bridal-includes-list">
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>HD Airbrush Waterproof Makeup</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Traditional Floral Arch &amp; Extension Hair Styling</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Kanjeevaram Saree Draping &amp; Setting</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Rental Temple / Antique Jewellery Option</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-dark" style="margin-top: auto;" data-open-modal="The Royal South Indian Bride">
+              Enquire Package
+            </button>
+          </div>
+
+          <!-- Package 2: Featured -->
+          <div class="bridal-card featured">
+            <span class="bridal-popular-badge">Most Popular</span>
+            <h3 class="bridal-card-title">Contemporary Glam Bride</h3>
+            <p class="bridal-card-subtitle">Airbrush Glass Skin &amp; Royalty Jewellery</p>
+
+            <ul class="bridal-includes-list">
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Ultra HD Airbrush Glass Skin Finish</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Modern Hollywood Waves / Sculpted Updo</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Lehenga Draping, Veil &amp; Dupatta Setting</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Complimentary Rental Kundan/Polki Set</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-gold" style="margin-top: auto;" data-open-modal="Contemporary Glam Bride">
+              Enquire Package
+            </button>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="bridal-card">
+            <h3 class="bridal-card-title">Pre-Bridal Hydra Glow Ritual</h3>
+            <p class="bridal-card-subtitle">Complete Skin &amp; Spa Preparation</p>
+
+            <ul class="bridal-includes-list">
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>2x Hydra Facial Sessions + Radiance Peel</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Recliner Pedicure &amp; Manicure Spa</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Full Body Scrub &amp; Herbal Polish Spa</span>
+              </li>
+              <li class="bridal-include-item">
+                <span class="bridal-check-icon">✓</span>
+                <span>Hair Keratin Spa &amp; Threading Package</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-dark" style="margin-top: auto;" data-open-modal="Pre-Bridal Hydra Glow Ritual">
+              Enquire Package
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIRTUAL STUDIO TOUR & GALLERY ==================== -->
+    <section id="studio-tour" class="showcase-section section-padding">
+      <div class="container">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto 3rem;">
+          <span class="section-tag">Virtual Studio Tour</span>
+          <h2 class="section-title">Inside Luxe Beauty Studio</h2>
+          <p style="color: var(--color-gray);">
+            Take a look inside our MRC Towers location featuring clean, hygienic, and luxury-designed treatment spaces.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <!-- Showcase 1: Reception -->
+          <div class="showcase-item showcase-item-1">
+            <img src="assets/images/studio-reception.jpg" alt="Luxe Reception Lounge MRC Towers" loading="lazy">
+            <div class="showcase-overlay">
+              <h3 class="showcase-title">Luxe Reception &amp; Lounge</h3>
+              <span class="showcase-sub">Panoramic City Views &amp; Velvet Seating</span>
+            </div>
+          </div>
+
+          <!-- Showcase 2: Glass Entrance -->
+          <div class="showcase-item showcase-item-2">
+            <img src="assets/images/studio-entrance.jpg" alt="Luxe Studio Entrance MRC Towers" loading="lazy">
+            <div class="showcase-overlay">
+              <h3 class="showcase-title">Studio Front Entrance</h3>
+              <span class="showcase-sub">Luxe Studio &amp; Nail Art Academy</span>
+            </div>
+          </div>
+
+          <!-- Showcase 3: Pedicure Spa Lounge -->
+          <div class="showcase-item showcase-item-3">
+            <img src="assets/images/pedicure-spa.jpg" alt="Pedicure Recliner Lounge" loading="lazy">
+            <div class="showcase-overlay">
+              <h3 class="showcase-title">Pedicure &amp; Foot Spa</h3>
+              <span class="showcase-sub">Leather Recliners &amp; Jet Basins</span>
+            </div>
+          </div>
+
+          <!-- Showcase 4: Skincare Suite -->
+          <div class="showcase-item showcase-item-4">
+            <img src="assets/images/facial-suite.jpg" alt="Hydra Facial Treatment Room" loading="lazy">
+            <div class="showcase-overlay">
+              <h3 class="showcase-title">Hydra Facial Room</h3>
+              <span class="showcase-sub">Clinical Treatment Systems</span>
+            </div>
+          </div>
+
+          <!-- Showcase 5: Clinical Bed -->
+          <div class="showcase-item showcase-item-5">
+            <img src="assets/images/clinical-room.jpg" alt="Clinical Aesthetic Suite" loading="lazy">
+            <div class="showcase-overlay">
+              <h3 class="showcase-title">Clinical Aesthetic Suite</h3>
+              <span class="showcase-sub">Private Luxury Treatment Bed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INSTAGRAM SHOWCASE SECTION (PLACED AFTER GALLERY) ==================== -->
+    <section class="insta-cta-section" id="instagram-journey">
+      <div class="container">
+        <div class="insta-cta-inner">
+          <div class="insta-cta-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+          <div class="insta-cta-text">
+            <span class="section-tag" style="color: var(--color-champagne); margin-bottom: 0.5rem;">SOCIAL PORTFOLIO</span>
+            <h2 class="insta-cta-title">FOLLOW THE LUXE JOURNEY</h2>
+            <p class="insta-cta-sub">
+              Discover more beauty transformations, bridal looks, nail art and Luxe moments on Instagram.
+            </p>
+            <div class="insta-handle-pill">@luxebeautystudio24</div>
+          </div>
+          <a href="https://www.instagram.com/luxebeautystudio24/" target="_blank" rel="noopener" class="btn btn-gold insta-cta-btn">
+            <span>FOLLOW US ON INSTAGRAM</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:0.5rem"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROFESSIONAL CONTACT & LOCATION SECTION ==================== -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left: Official Contact Details Card -->
+          <div class="contact-info-card">
+            <div>
+              <span class="contact-detail-label">OFFICIAL ADDRESS &amp; CONTACT</span>
+              <h2 class="contact-info-title">Visit Luxe Studio.</h2>
+              <p class="contact-info-desc">
+                Rated 4.8★ with 26 Verified Reviews on Google. Experience luxury beauty services at MRC Towers.
+              </p>
+
+              <div class="contact-details-list">
+                <div class="contact-detail-item">
+                  <div class="contact-icon-wrapper">📍</div>
+                  <div>
+                    <div class="contact-detail-label">Studio Location</div>
+                    <div class="contact-detail-value">
+                      MRC Towers, 674-4, Bannerghatta Rd,<br>
+                      opp. Prestige Park Square, Gottigere Post,<br>
+                      Basavanapura, Bengaluru, KA 560083
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon-wrapper">📞</div>
+                  <div>
+                    <div class="contact-detail-label">Phone Reservations</div>
+                    <div class="contact-detail-value">099006 57096</div>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon-wrapper">⭐</div>
+                  <div>
+                    <div class="contact-detail-label">Google Rating</div>
+                    <div class="contact-detail-value">4.8★ (26 Verified Customer Reviews)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-quick-buttons">
+              <a href="https://wa.me/919900657096" target="_blank" rel="noopener" class="btn whatsapp-btn btn-sm">
+                WhatsApp 099006 57096
+              </a>
+              <a href="tel:09900657096" class="btn btn-outline btn-sm" style="color:white; border-color:rgba(255,255,255,0.3);">
+                Call Studio
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Contact & Booking Form -->
+          <div class="form-wrapper">
+            <h3 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Send an Enquiry</h3>
+            <p style="color: var(--color-gray); font-size: 0.9rem; margin-bottom: 2rem;">
+              Fill out your details to book a consultation or check service availability.
+            </p>
+
+            <form id="mainContactForm">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Full Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Priya Sharma" required>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" class="form-input" placeholder="099006 57096" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactService">Service Required</label>
+                  <select class="form-select" id="contactService" required>
+                    <option value="">Select Service</option>
+                    <option value="Hair">Hair</option>
+                    <option value="Makeup">Makeup</option>
+                    <option value="Nail Art">Nail Art</option>
+                    <option value="Nail Art Classes">Nail Art Classes</option>
+                    <option value="Waxing">Waxing</option>
+                    <option value="Facials">Facials</option>
+                    <option value="Pedicure / Manicure">Pedicure / Manicure</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactDate">Preferred Date</label>
+                  <input type="date" id="contactDate" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactTime">Preferred Time</label>
+                  <input type="time" id="contactTime" class="form-input" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactRequirements">Message / Requirements</label>
+                <textarea class="form-textarea" id="contactRequirements" placeholder="Specify event date, function details, or jewellery rental preferences..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%;">
+                Submit Appointment Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="#" class="brand-logo" style="color: var(--color-white);">
+              LUXE <span class="accent">BEAUTY</span> <span class="sub">Studio</span>
+            </a>
+            <p class="footer-brand-desc">
+              Bengaluru's premier beauty studio offering Airbrush makeup, Hydra Facials, Hairstyling, Nail extensions, and Rental Jewellery.
+            </p>
+            <div style="margin-top: 1.25rem;">
+              <a href="https://www.instagram.com/luxebeautystudio24/" target="_blank" rel="noopener" class="footer-insta-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>@luxebeautystudio24</span>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#about" class="footer-link">About Sanctuary</a></li>
+              <li><a href="#services" class="footer-link">Services Menu</a></li>
+              <li><a href="#studio-tour" class="footer-link">Studio Tour</a></li>
+              <li><a href="#bridal" class="footer-link">Bridal &amp; Jewellery</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Official Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services" class="footer-link">Hair &amp; Balayage</a></li>
+              <li><a href="#services" class="footer-link">Airbrush Makeup</a></li>
+              <li><a href="#services" class="footer-link">Nail Art &amp; Academy</a></li>
+              <li><a href="#services" class="footer-link">Hydra Facials &amp; Spa</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Studio Address</h4>
+            <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 0.75rem;">
+              MRC Towers, 674-4, Bannerghatta Rd,<br>
+              opp. Prestige Park Square, Gottigere Post,<br>
+              Basavanapura, Bengaluru, KA 560083
+            </p>
+            <p style="font-size: 0.85rem; color: var(--color-champagne);">
+              <strong>Phone:</strong> 099006 57096<br>
+              <strong>Rating:</strong> 4.8★ (26 Reviews)
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 Luxe Beauty Studio, MRC Towers. All Rights Reserved.</div>
+          <div>Crafted with Precision &amp; Excellence</div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /app-main-wrapper -->
+
+  <!-- ==================== 2-STEP INTERACTIVE WHATSAPP BOOKING MODAL ==================== -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <span class="modal-step-indicator" id="modalStepIndicator">STEP 1 OF 2 &bull; SELECT SERVICE</span>
+          <h3 style="font-size: 1.4rem; font-family: var(--font-serif);" id="modalTitle">Book Your Appointment</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="whatsappBookingForm">
+          
+          <!-- STEP 1: SERVICE SELECTION -->
+          <div class="modal-step-container active" id="modalStep1">
+            <label class="form-label" style="margin-bottom: 0.75rem; display:block;">Select Desired Service</label>
+            <div class="service-selection-grid">
+              <label class="service-radio-card">
+                <input type="radio" name="modalSelectedService" value="Hair" required>
+                <div class="radio-card-content">
+                  <span class="radio-card-title">Hair</span>
+                  <span class="radio-card-sub">Styling, Balayage &amp; Keratin</span>
+                </div>
+              </label>
+
+              <label class="service-radio-card">
+                <input type="radio" name="modalSelectedService" value="Makeup">
+                <div class="radio-card-content">
+                  <span class="radio-card-title">Makeup</span>
+                  <span class="radio-card-sub">Airbrush &amp; Bridal Makeovers</span>
+                </div>
+              </label>
+
+              <label class="service-radio-card">
+                <input type="radio" name="modalSelectedService" value="Nail Art">
+                <div class="radio-card-content">
+                  <span class="radio-card-title">Nail Art</span>
+                  <span class="radio-card-sub">Extensions &amp; 3D Nail Art</span>
+                </div>
+              </label>
+
+              <label class="service-radio-card">
+                <input type="radio" name="modalSelectedService" value="Nail Art Classes">
+                <div class="radio-card-content">
+                  <span class="radio-card-title">Nail Art Classes</span>
+                  <span class="radio-card-sub">Certified Academy Training</span>
+                </div>
+              </label>
+
+              <label class="service-radio-card">
+                <input type="radio" name="modalSelectedService" value="Waxing">
+                <div class="radio-card-content">
+                  <span class="radio-card-title">Waxing</span>
+                  <span class="radio-card-sub">Luxe Smooth Body Care</span>
+                </div>
+              </label>
+
+              <label class="service-radio-card">
+                <input type="radio" name="modalSelectedService" value="Facials">
+                <div class="radio-card-content">
+                  <span class="radio-card-title">Facials</span>
+                  <span class="radio-card-sub">Hydra Facial &amp; Skin Radiance</span>
+                </div>
+              </label>
+
+              <label class="service-radio-card" style="grid-column: 1 / -1;">
+                <input type="radio" name="modalSelectedService" value="Pedicure / Manicure">
+                <div class="radio-card-content">
+                  <span class="radio-card-title">Pedicure / Manicure</span>
+                  <span class="radio-card-sub">Recliner Foot Spa &amp; Nail Polish</span>
+                </div>
+              </label>
+            </div>
+
+            <button type="button" class="btn btn-gold" style="width: 100%; margin-top: 1.5rem;" id="modalNextBtn">
+              NEXT: CLIENT DETAILS &rarr;
+            </button>
+          </div>
+
+          <!-- STEP 2: CLIENT DETAILS -->
+          <div class="modal-step-container" id="modalStep2">
+            <div class="form-group">
+              <label class="form-label" for="bookingName">Full Name</label>
+              <input type="text" id="bookingName" class="form-input" placeholder="e.g. Ananya Rao" required>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="bookingAge">Age</label>
+                <input type="number" id="bookingAge" class="form-input" placeholder="e.g. 26" min="12" max="100" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bookingDate">Preferred Date</label>
+                <input type="date" id="bookingDate" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookingTime">Preferred Time Slot</label>
+              <input type="time" id="bookingTime" class="form-input" required>
+            </div>
+
+            <div class="modal-actions-row">
+              <button type="button" class="btn btn-outline btn-sm" id="modalBackBtn">
+                &larr; BACK
+              </button>
+              <button type="submit" class="btn btn-gold" style="flex-grow: 1;">
+                SEND TO WHATSAPP &rarr;
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Local Standalone App Logic -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
