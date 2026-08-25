@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>LUXE Beauty Studio | Premium Salon &amp; Bridal Excellence in Bengaluru</title>
+  <title>LUXE Beauty Studio &amp; Academy | Premium Salon &amp; Certified Trainings Bengaluru</title>
   <meta name="description"
-    content="Luxe Beauty Studio at MRC Towers, Bannerghatta Rd, Bengaluru. Premier salon offering Airbrush makeup, Hydra Facials, Hairstyling, Nail Art &amp; Rental Jewellery. Call 099006 57096.">
+    content="Luxe Beauty Studio &amp; Academy at MRC Towers, Bannerghatta Rd, Bengaluru. Premier salon &amp; academy offering Certified Nail Art Classes, Airbrush makeup, Hydra Facials, Hairstyling &amp; Rental Jewellery. Call 099006 57096.">
   <meta name="theme-color" content="#1E1C1B">
-  <meta property="og:title" content="LUXE Beauty Studio | Bengaluru's Premier Beauty Destination">
+  <meta property="og:title" content="LUXE Beauty Studio &amp; Academy | Bengaluru's Premier Destination">
   <meta property="og:description"
-    content="Airbrush makeup, Hydra Facials, Hairstyling, Nail Art &amp; Rental Jewellery at MRC Towers, Bannerghatta Road.">
+    content="Certified Nail Art Academy, Airbrush makeup, Hydra Facials, Hairstyling &amp; Rental Jewellery at MRC Towers, Bannerghatta Road.">
   <meta property="og:type" content="website">
 
   <!-- Local Stylesheet System -->
@@ -21,9 +21,18 @@
 
   <!-- ==================== FULL-SCREEN CINEMATIC INTRO VIDEO ==================== -->
   <div class="intro-overlay" id="introOverlay">
-    <video class="intro-video" id="introVideo" autoplay muted playsinline preload="auto">
+    <!-- Ambient video background for glowing borderless effect on all screen aspect ratios -->
+    <video class="intro-video-ambient" autoplay muted playsinline loop aria-hidden="true">
       <source src="assets/videos/THIS_ONE_gwr_video_mvp.mp4" type="video/mp4">
     </video>
+
+    <!-- Main contained video player (Zero cropping on mobile & desktop) -->
+    <div class="intro-video-container">
+      <video class="intro-video" id="introVideo" autoplay muted playsinline preload="auto">
+        <source src="assets/videos/THIS_ONE_gwr_video_mvp.mp4" type="video/mp4">
+      </video>
+    </div>
+    
     <div class="intro-vignette"></div>
 
     <!-- Video Progress Line -->
@@ -40,7 +49,7 @@
   <!-- ==================== MAIN WEBSITE CONTAINER ==================== -->
   <div class="app-main-wrapper" id="appMain">
 
-    <!-- ==================== NAVIGATION NAVBAR ==================== -->
+    <!-- ==================== NAVIGATION NAVBAR (ALWAYS VISIBLE & STICKY) ==================== -->
     <nav class="navbar" id="mainNavbar">
       <div class="container nav-container">
         <!-- Brand Logo -->
@@ -52,7 +61,7 @@
         <ul class="nav-menu">
           <li><a href="#about" class="nav-link">About Sanctuary</a></li>
           <li><a href="#services" class="nav-link">Services Menu</a></li>
-          <li><a href="#studio-tour" class="nav-link">Studio Tour</a></li>
+          <li><a href="#academy" class="nav-link">LUXE Academy</a></li>
           <li><a href="#bridal" class="nav-link">Bridal &amp; Jewellery</a></li>
           <li><a href="#contact" class="nav-link">Contact &amp; Directions</a></li>
         </ul>
@@ -94,7 +103,7 @@
         <ul class="mobile-nav-list">
           <li><a href="#about" class="mobile-nav-link">About Sanctuary</a></li>
           <li><a href="#services" class="mobile-nav-link">Luxe Services Menu</a></li>
-          <li><a href="#studio-tour" class="mobile-nav-link">Virtual Studio Tour</a></li>
+          <li><a href="#academy" class="mobile-nav-link">LUXE Academy &amp; Classes</a></li>
           <li><a href="#bridal" class="mobile-nav-link">Bridal &amp; Rental Jewellery</a></li>
           <li><a href="#contact" class="mobile-nav-link">Location &amp; Directions</a></li>
           <li style="padding-top: 0.5rem;">
@@ -135,7 +144,7 @@
               Where Beauty <br>Meets <span style="font-style: italic; font-weight: 400; color: var(--color-gold-dark);">Elegance</span>
             </h1>
             <p class="hero-description">
-              Premium Beauty, Bridal &amp; Grooming Services<br>Crafted Especially for You.
+              Premium Beauty, Bridal, Nail Art &amp; Academy Trainings<br>Crafted Especially for You in Bengaluru.
             </p>
             <div class="hero-actions">
               <button class="btn btn-gold" data-open-modal>
@@ -157,12 +166,12 @@
               </div>
               <div>
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Hygiene Assured</div>
+                <div class="stat-label">Certified Academy</div>
               </div>
             </div>
           </div>
 
-          <!-- Hero Media Display (Real Studio Reception Photo) -->
+          <!-- Hero Media Display -->
           <div class="hero-media-wrapper">
             <div class="hero-image-container">
               <img src="assets/images/studio-reception.jpg" alt="Luxe Beauty Studio Reception Lounge Bannerghatta Rd">
@@ -203,16 +212,16 @@
               Beauty Redefined <br>At MRC Towers.
             </h2>
             <p style="color: var(--color-gray); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
-              Welcome to <strong>Luxe Beauty Studio</strong>, situated at <strong>MRC Towers, Bannerghatta Road (opp. Prestige Park Square)</strong>. Our multi-suite sanctuary brings together master nail artists, certified dermal estheticians, and bridal stylists under one roof.
+              Welcome to <strong>Luxe Beauty Studio &amp; Academy</strong>, situated at <strong>MRC Towers, Bannerghatta Road (opp. Prestige Park Square)</strong>. Our multi-suite sanctuary brings together master nail artists, certified dermal estheticians, and bridal stylists under one roof.
             </p>
             <p style="color: var(--color-gray); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
-              Whether you need a glowing <strong>Hydra Facial</strong>, bespoke <strong>Airbrush Bridal Makeup</strong>, signature <strong>Hairstyling</strong>, or exquisite <strong>Rental Jewellery</strong> for your wedding day, we deliver an unmatchable luxury experience.
+              Whether you need a glowing <strong>Hydra Facial</strong>, bespoke <strong>Airbrush Bridal Makeup</strong>, signature <strong>Hairstyling</strong>, certified <strong>Nail Art Training</strong>, or exquisite <strong>Rental Jewellery</strong> for your wedding day, we deliver an unmatchable luxury experience.
             </p>
 
             <ul class="about-feature-list">
               <li class="feature-item">
                 <span class="feature-icon-dot"></span>
-                <span>Airbrush Makeup &amp; Beauty Makeovers</span>
+                <span>Airbrush Makeup &amp; Bridal Transformations</span>
               </li>
               <li class="feature-item">
                 <span class="feature-icon-dot"></span>
@@ -220,11 +229,11 @@
               </li>
               <li class="feature-item">
                 <span class="feature-icon-dot"></span>
-                <span>Certified Senior Nail Artists</span>
+                <span>Certified Nail Art Academy &amp; Masterclasses</span>
               </li>
               <li class="feature-item">
                 <span class="feature-icon-dot"></span>
-                <span>Exclusive Bridal Rental Jewellery</span>
+                <span>Exclusive Bridal Rental Jewellery Collections</span>
               </li>
             </ul>
           </div>
@@ -232,7 +241,7 @@
       </div>
     </section>
 
-    <!-- ==================== OFFICIAL SERVICES SECTION (EXACTLY 7 SERVICES) ==================== -->
+    <!-- ==================== OFFICIAL SERVICES SECTION (EXACTLY 7 SERVICES WITH DEDICATED PHOTOS) ==================== -->
     <section id="services" class="services-section section-padding">
       <div class="container">
         <div class="services-header">
@@ -241,7 +250,7 @@
             <h2 class="section-title" style="margin-bottom: 0;">The Luxe Menu</h2>
           </div>
           <p style="color: var(--color-gray); max-width: 420px; font-size: 0.95rem;">
-            Specialized beauty services crafted by expert stylists and dermatological specialists.
+            Specialized beauty services crafted by expert stylists, nail masters, and dermatological specialists.
           </p>
         </div>
 
@@ -257,13 +266,13 @@
           <button class="tab-btn" data-filter="manicure-pedicure">Pedicure / Manicure</button>
         </div>
 
-        <!-- Services Cards Grid (Exactly 7 Services, No Pricing) -->
+        <!-- Services Cards Grid (Exactly 7 Services, Clear Service Imagery) -->
         <div class="services-grid">
 
           <!-- Service 1: Hair -->
           <article class="service-card" data-category="hair">
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000" alt="Hairstyling & Balayage at Luxe Studio" loading="lazy">
+              <img src="assets/images/service-hair.jpg" alt="Hairstyling, Balayage & Blowouts at Luxe Studio" loading="lazy">
               <span class="service-badge">STYLING COUTURE</span>
             </div>
             <div class="service-card-body">
@@ -283,7 +292,7 @@
           <!-- Service 2: Makeup -->
           <article class="service-card" data-category="makeup">
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1000" alt="Airbrush Makeup at Luxe Studio" loading="lazy">
+              <img src="assets/images/service-makeup.jpg" alt="Airbrush Bridal Makeup & Makeovers at Luxe Studio" loading="lazy">
               <span class="service-badge">FLAWLESS FINISH</span>
             </div>
             <div class="service-card-body">
@@ -303,7 +312,7 @@
           <!-- Service 3: Nail Art -->
           <article class="service-card" data-category="nail-art">
             <div class="service-card-img">
-              <img src="assets/images/pedicure-spa.jpg" alt="Nail Art & Extensions" loading="lazy">
+              <img src="assets/images/service-nail-art.jpg" alt="Luxury Nail Extensions & 3D Art at Luxe Studio" loading="lazy">
               <span class="service-badge">NAIL ARTISTRY</span>
             </div>
             <div class="service-card-body">
@@ -323,7 +332,7 @@
           <!-- Service 4: Nail Art Classes -->
           <article class="service-card" data-category="nail-classes">
             <div class="service-card-img">
-              <img src="assets/images/studio-entrance.jpg" alt="Nail Art Classes Academy" loading="lazy">
+              <img src="assets/images/service-nail-classes.jpg" alt="Certified Nail Art Classes at Luxe Academy" loading="lazy">
               <span class="service-badge">CERTIFIED ACADEMY</span>
             </div>
             <div class="service-card-body">
@@ -343,7 +352,7 @@
           <!-- Service 5: Waxing -->
           <article class="service-card" data-category="waxing">
             <div class="service-card-img">
-              <img src="assets/images/clinical-room.jpg" alt="Luxe Smooth Body Waxing" loading="lazy">
+              <img src="assets/images/service-waxing.jpg" alt="Smooth Body Waxing Spa Treatment at Luxe Studio" loading="lazy">
               <span class="service-badge">SKIN CARE</span>
             </div>
             <div class="service-card-body">
@@ -363,7 +372,7 @@
           <!-- Service 6: Facials -->
           <article class="service-card" data-category="facials">
             <div class="service-card-img">
-              <img src="assets/images/facial-suite.jpg" alt="Hydra Facial & Skin Radiance Suite" loading="lazy">
+              <img src="assets/images/service-facials.jpg" alt="Hydra Facial & Skin Radiance Treatment at Luxe Studio" loading="lazy">
               <span class="service-badge">DERM CLINICAL</span>
             </div>
             <div class="service-card-body">
@@ -383,7 +392,7 @@
           <!-- Service 7: Pedicure / Manicure -->
           <article class="service-card" data-category="manicure-pedicure">
             <div class="service-card-img">
-              <img src="assets/images/pedicure-spa.jpg" alt="Pedicure & Manicure Recliner Spa" loading="lazy">
+              <img src="assets/images/service-pedicure.jpg" alt="Pedicure & Manicure Recliner Spa at Luxe Studio" loading="lazy">
               <span class="service-badge">SPA LUXURY</span>
             </div>
             <div class="service-card-body">
@@ -400,6 +409,116 @@
             </div>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LUXE BEAUTY & NAIL ACADEMY SECTION (REPLACES STUDIO TOUR) ==================== -->
+    <section id="academy" class="academy-section section-padding">
+      <div class="container">
+        <div class="academy-grid">
+          <!-- Left Column: Real Class Image with Badges -->
+          <div class="academy-media-frame">
+            <div class="academy-img-wrapper">
+              <img src="assets/images/luxe-academy.jpg" alt="Luxe Beauty Studio Nail Art Class and Academy Training Session at MRC Towers" loading="lazy">
+              <div class="academy-img-overlay"></div>
+            </div>
+            
+            <div class="academy-floating-badge top-badge">
+              <div class="badge-accent-icon">🎓</div>
+              <div>
+                <div class="badge-main-text">Govt &amp; ISO Certified</div>
+                <div class="badge-sub-text">Recognized Professional Diploma</div>
+              </div>
+            </div>
+
+            <div class="academy-floating-badge bottom-badge">
+              <div class="badge-accent-icon">💅</div>
+              <div>
+                <div class="badge-main-text">100% Practical Training</div>
+                <div class="badge-sub-text">Live Models &bull; Starter Kit Included</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Academy Information & Modules -->
+          <div class="academy-content">
+            <div class="hero-tag" style="margin-bottom: 1rem;">
+              <span class="hero-tag-line"></span>
+              <span class="hero-tag-text">CERTIFIED BEAUTY &amp; NAIL ACADEMY</span>
+            </div>
+            <h2 class="section-title" style="margin-bottom: 1.25rem;">
+              Master the Craft. <br>Launch Your Beauty Career.
+            </h2>
+            <p class="academy-lead-desc">
+              Whether you are an aspiring artist wanting to start your own salon or a professional looking to master intricate <strong>Nail Art Techniques (Dotting, Stripes, Ombre, Floral, Marble)</strong> &amp; <strong>Gel/Acrylic Extensions</strong>, LUXE Academy provides comprehensive, certified masterclasses at MRC Towers, Bannerghatta Road.
+            </p>
+
+            <!-- 4 Key Modules / Curriculum Highlights -->
+            <div class="academy-modules-grid">
+              <div class="academy-module-card">
+                <div class="module-number">01</div>
+                <h4 class="module-title">Nail Art Techniques</h4>
+                <p class="module-desc">
+                  Dotting, Ombre, Stripes, 3D Hand-painted Florals, Marble, Encapsulation &amp; Chrome finishes.
+                </p>
+              </div>
+
+              <div class="academy-module-card">
+                <div class="module-number">02</div>
+                <h4 class="module-title">Extensions &amp; Shaping</h4>
+                <p class="module-desc">
+                  Gel extensions, Polygel, Acrylic tip building, Cuticle prep, Apex reinforcement &amp; long retention.
+                </p>
+              </div>
+
+              <div class="academy-module-card">
+                <div class="module-number">03</div>
+                <h4 class="module-title">Certified Validation</h4>
+                <p class="module-desc">
+                  Industry-accredited diploma upon course completion validating your expertise to work anywhere or open a salon.
+                </p>
+              </div>
+
+              <div class="academy-module-card">
+                <div class="module-number">04</div>
+                <h4 class="module-title">Salon Setup &amp; Business</h4>
+                <p class="module-desc">
+                  Client consultation skills, product sourcing guide, pricing blueprints, and social media portfolio building.
+                </p>
+              </div>
+            </div>
+
+            <!-- Academy Perks Checklist -->
+            <ul class="academy-perks-list">
+              <li class="perk-item">
+                <span class="perk-check">✓</span>
+                <span>Free Professional Kit &amp; Practice Materials Included</span>
+              </li>
+              <li class="perk-item">
+                <span class="perk-check">✓</span>
+                <span>Flexible Weekday &amp; Weekend Batches Available</span>
+              </li>
+              <li class="perk-item">
+                <span class="perk-check">✓</span>
+                <span>1-on-1 Guidance with Certified Master Trainers</span>
+              </li>
+              <li class="perk-item">
+                <span class="perk-check">✓</span>
+                <span>Lifetime Mentorship &amp; Salon Career Guidance</span>
+              </li>
+            </ul>
+
+            <div class="academy-actions">
+              <button class="btn btn-gold" data-open-modal="Nail Art Classes">
+                ENQUIRE FOR ACADEMY &rarr;
+              </button>
+              <a href="https://wa.me/919900657096?text=Hi%20LUXE%20Beauty%20Studio%2C%20I%20would%20like%20details%20about%20your%20Certified%20Nail%20Art%20Academy%20Classes%20and%20upcoming%20batches." target="_blank" rel="noopener" class="btn btn-outline">
+                WHATSAPP ADMISSIONS
+              </a>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
@@ -513,67 +632,7 @@
       </div>
     </section>
 
-    <!-- ==================== VIRTUAL STUDIO TOUR & GALLERY ==================== -->
-    <section id="studio-tour" class="showcase-section section-padding">
-      <div class="container">
-        <div style="text-align: center; max-width: 650px; margin: 0 auto 3rem;">
-          <span class="section-tag">Virtual Studio Tour</span>
-          <h2 class="section-title">Inside Luxe Beauty Studio</h2>
-          <p style="color: var(--color-gray);">
-            Take a look inside our MRC Towers location featuring clean, hygienic, and luxury-designed treatment spaces.
-          </p>
-        </div>
-
-        <div class="showcase-grid">
-          <!-- Showcase 1: Reception -->
-          <div class="showcase-item showcase-item-1">
-            <img src="assets/images/studio-reception.jpg" alt="Luxe Reception Lounge MRC Towers" loading="lazy">
-            <div class="showcase-overlay">
-              <h3 class="showcase-title">Luxe Reception &amp; Lounge</h3>
-              <span class="showcase-sub">Panoramic City Views &amp; Velvet Seating</span>
-            </div>
-          </div>
-
-          <!-- Showcase 2: Glass Entrance -->
-          <div class="showcase-item showcase-item-2">
-            <img src="assets/images/studio-entrance.jpg" alt="Luxe Studio Entrance MRC Towers" loading="lazy">
-            <div class="showcase-overlay">
-              <h3 class="showcase-title">Studio Front Entrance</h3>
-              <span class="showcase-sub">Luxe Studio &amp; Nail Art Academy</span>
-            </div>
-          </div>
-
-          <!-- Showcase 3: Pedicure Spa Lounge -->
-          <div class="showcase-item showcase-item-3">
-            <img src="assets/images/pedicure-spa.jpg" alt="Pedicure Recliner Lounge" loading="lazy">
-            <div class="showcase-overlay">
-              <h3 class="showcase-title">Pedicure &amp; Foot Spa</h3>
-              <span class="showcase-sub">Leather Recliners &amp; Jet Basins</span>
-            </div>
-          </div>
-
-          <!-- Showcase 4: Skincare Suite -->
-          <div class="showcase-item showcase-item-4">
-            <img src="assets/images/facial-suite.jpg" alt="Hydra Facial Treatment Room" loading="lazy">
-            <div class="showcase-overlay">
-              <h3 class="showcase-title">Hydra Facial Room</h3>
-              <span class="showcase-sub">Clinical Treatment Systems</span>
-            </div>
-          </div>
-
-          <!-- Showcase 5: Clinical Bed -->
-          <div class="showcase-item showcase-item-5">
-            <img src="assets/images/clinical-room.jpg" alt="Clinical Aesthetic Suite" loading="lazy">
-            <div class="showcase-overlay">
-              <h3 class="showcase-title">Clinical Aesthetic Suite</h3>
-              <span class="showcase-sub">Private Luxury Treatment Bed</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== INSTAGRAM SHOWCASE SECTION (PLACED AFTER GALLERY) ==================== -->
+    <!-- ==================== INSTAGRAM SHOWCASE SECTION ==================== -->
     <section class="insta-cta-section" id="instagram-journey">
       <div class="container">
         <div class="insta-cta-inner">
@@ -606,7 +665,7 @@
               <span class="contact-detail-label">OFFICIAL ADDRESS &amp; CONTACT</span>
               <h2 class="contact-info-title">Visit Luxe Studio.</h2>
               <p class="contact-info-desc">
-                Rated 4.8★ with 26 Verified Reviews on Google. Experience luxury beauty services at MRC Towers.
+                Rated 4.8★ with 26 Verified Reviews on Google. Experience luxury beauty &amp; academy trainings at MRC Towers.
               </p>
 
               <div class="contact-details-list">
@@ -625,7 +684,7 @@
                 <div class="contact-detail-item">
                   <div class="contact-icon-wrapper">📞</div>
                   <div>
-                    <div class="contact-detail-label">Phone Reservations</div>
+                    <div class="contact-detail-label">Phone Reservations &amp; Admissions</div>
                     <div class="contact-detail-value">099006 57096</div>
                   </div>
                 </div>
@@ -654,7 +713,7 @@
           <div class="form-wrapper">
             <h3 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Send an Enquiry</h3>
             <p style="color: var(--color-gray); font-size: 0.9rem; margin-bottom: 2rem;">
-              Fill out your details to book a consultation or check service availability.
+              Fill out your details to book a salon appointment or enquire about certified academy courses.
             </p>
 
             <form id="mainContactForm">
@@ -670,16 +729,16 @@
                 </div>
 
                 <div class="form-group">
-                  <label class="form-label" for="contactService">Service Required</label>
+                  <label class="form-label" for="contactService">Service / Course Required</label>
                   <select class="form-select" id="contactService" required>
-                    <option value="">Select Service</option>
-                    <option value="Hair">Hair</option>
-                    <option value="Makeup">Makeup</option>
-                    <option value="Nail Art">Nail Art</option>
-                    <option value="Nail Art Classes">Nail Art Classes</option>
-                    <option value="Waxing">Waxing</option>
-                    <option value="Facials">Facials</option>
-                    <option value="Pedicure / Manicure">Pedicure / Manicure</option>
+                    <option value="">Select Service / Course</option>
+                    <option value="Hair">Hair Styling &amp; Balayage</option>
+                    <option value="Makeup">Airbrush Makeup &amp; Bridal</option>
+                    <option value="Nail Art">Nail Extensions &amp; 3D Art</option>
+                    <option value="Nail Art Classes">Certified Nail Art Classes (Academy)</option>
+                    <option value="Waxing">Luxe Smooth Body Waxing</option>
+                    <option value="Facials">Hydra Facial &amp; Skin Radiance</option>
+                    <option value="Pedicure / Manicure">Pedicure / Manicure Spa</option>
                   </select>
                 </div>
               </div>
@@ -698,11 +757,11 @@
 
               <div class="form-group">
                 <label class="form-label" for="contactRequirements">Message / Requirements</label>
-                <textarea class="form-textarea" id="contactRequirements" placeholder="Specify event date, function details, or jewellery rental preferences..."></textarea>
+                <textarea class="form-textarea" id="contactRequirements" placeholder="Specify event date, function details, academy batch preferences, or jewellery rental..."></textarea>
               </div>
 
               <button type="submit" class="btn btn-gold" style="width: 100%;">
-                Submit Appointment Request
+                Submit Enquiry Request
               </button>
             </form>
           </div>
@@ -719,7 +778,7 @@
               LUXE <span class="accent">BEAUTY</span> <span class="sub">Studio</span>
             </a>
             <p class="footer-brand-desc">
-              Bengaluru's premier beauty studio offering Airbrush makeup, Hydra Facials, Hairstyling, Nail extensions, and Rental Jewellery.
+              Bengaluru's premier beauty destination offering Airbrush makeup, Hydra Facials, Hairstyling, Nail extensions, and Certified Academy trainings.
             </p>
             <div style="margin-top: 1.25rem;">
               <a href="https://www.instagram.com/luxebeautystudio24/" target="_blank" rel="noopener" class="footer-insta-pill">
@@ -734,17 +793,18 @@
             <ul class="footer-links">
               <li><a href="#about" class="footer-link">About Sanctuary</a></li>
               <li><a href="#services" class="footer-link">Services Menu</a></li>
-              <li><a href="#studio-tour" class="footer-link">Studio Tour</a></li>
+              <li><a href="#academy" class="footer-link">LUXE Academy</a></li>
               <li><a href="#bridal" class="footer-link">Bridal &amp; Jewellery</a></li>
+              <li><a href="#contact" class="footer-link">Contact &amp; Location</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 class="footer-col-title">Official Services</h4>
+            <h4 class="footer-col-title">Studio &amp; Academy</h4>
             <ul class="footer-links">
               <li><a href="#services" class="footer-link">Hair &amp; Balayage</a></li>
-              <li><a href="#services" class="footer-link">Airbrush Makeup</a></li>
-              <li><a href="#services" class="footer-link">Nail Art &amp; Academy</a></li>
+              <li><a href="#services" class="footer-link">Airbrush Bridal Makeup</a></li>
+              <li><a href="#academy" class="footer-link">Certified Nail Academy</a></li>
               <li><a href="#services" class="footer-link">Hydra Facials &amp; Spa</a></li>
             </ul>
           </div>
@@ -764,7 +824,7 @@
         </div>
 
         <div class="footer-bottom">
-          <div>&copy; 2026 Luxe Beauty Studio, MRC Towers. All Rights Reserved.</div>
+          <div>&copy; 2026 Luxe Beauty Studio &amp; Academy, MRC Towers. All Rights Reserved.</div>
           <div>Crafted with Precision &amp; Excellence</div>
         </div>
       </div>
@@ -788,7 +848,7 @@
           
           <!-- STEP 1: SERVICE SELECTION -->
           <div class="modal-step-container active" id="modalStep1">
-            <label class="form-label" style="margin-bottom: 0.75rem; display:block;">Select Desired Service</label>
+            <label class="form-label" style="margin-bottom: 0.75rem; display:block;">Select Desired Service or Course</label>
             <div class="service-selection-grid">
               <label class="service-radio-card">
                 <input type="radio" name="modalSelectedService" value="Hair" required>

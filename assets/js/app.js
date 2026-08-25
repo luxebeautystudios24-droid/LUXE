@@ -220,7 +220,7 @@ function initBookingModal() {
       let targetValue = serviceName;
       if (serviceName.includes('Hair')) targetValue = 'Hair';
       else if (serviceName.includes('Makeup') || serviceName.includes('Airbrush') || serviceName.includes('Bride')) targetValue = 'Makeup';
-      else if (serviceName.includes('Classes')) targetValue = 'Nail Art Classes';
+      else if (serviceName.includes('Classes') || serviceName.includes('Academy')) targetValue = 'Nail Art Classes';
       else if (serviceName.includes('Nail')) targetValue = 'Nail Art';
       else if (serviceName.includes('Waxing')) targetValue = 'Waxing';
       else if (serviceName.includes('Facial')) targetValue = 'Facials';
