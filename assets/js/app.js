@@ -142,6 +142,12 @@ function initMobileDrawer() {
 
   overlay.addEventListener('click', closeDrawer);
 
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 992 && drawer.classList.contains('active')) {
+      closeDrawer();
+    }
+  });
+
   navLinks.forEach(link => {
     link.addEventListener('click', closeDrawer);
   });
