@@ -15,6 +15,42 @@
 
   <!-- Local Stylesheet System -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18376082938"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18376082938');
+  </script>
+
+  <!-- Google Ads Website Phone-Call Conversion Tracking -->
+  <script>
+    gtag('config', 'AW-18376082938/l3atCOnurpodEPqLs7pE', {
+      'phone_conversion_number': '099006 57096',
+      'phone_conversion_callback': function(formatted_number, mobile_number) {
+        try {
+          // Update tel: links so mobile devices dial the Google forwarding number
+          var telLinks = document.querySelectorAll('a[href^="tel:"]');
+          for (var i = 0; i < telLinks.length; i++) {
+            telLinks[i].href = 'tel:' + mobile_number;
+          }
+          // Update visible text elements displaying the phone number
+          var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+          var node;
+          while (node = walker.nextNode()) {
+            if (node.nodeValue && node.nodeValue.indexOf('099006 57096') !== -1) {
+              node.nodeValue = node.nodeValue.replace(/099006\s*57096/g, formatted_number);
+            }
+          }
+        } catch (err) {
+          console.warn('Google call tracking callback error:', err);
+        }
+      }
+    });
+  </script>
 </head>
 
 <body>
